@@ -1,13 +1,99 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.app {
+  display: flex;
+  flex-direction: column;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main {
+  background-color: #f2d6a6;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  border-radius: 0 0 20px 0;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.header {
+  text-align: center;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #a8a3a3;
+  align-items: center;
+}
+
+.task:first-of-type {
+  margin-top: 30px;
+}
+
+.task:last-of-type {
+  margin-bottom: 30px;
+}
+
+.delete {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.book {
+  margin-top: 20px;
+}
+
+.bookItem {
+  display: flex;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.add, .button {
+  background-color: #f2d6a6;
+  border: none;
+  cursor: pointer;
+}
+
+.addImg {
+  width: 30px;
+}
+
+.addForm {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.addInput {
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  width: 100%;
+}
+
+.isDone {
+  text-decoration: line-through;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.text {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.btn {
+  border: 1px solid #131313;
+  border-radius: 9999px;
+  padding: 10px; 
+  cursor: pointer;
+}
+
+.btn:not(:last-of-type) {
+  margin-right: 20px;
+}
+
+.hidden {
+  display: none;
 }
